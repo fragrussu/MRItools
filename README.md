@@ -28,7 +28,8 @@ python ./MRItools/tools/fitdki.py --help
 
 # Description of tools
 The following command line tools are available.
-* `fitdki.py`: to fit the [Diffusion Kurtosis Imaging](http://doi.org/10.1002/mrm.20508) (DKI) signal representation to multi-shell diffusion MRI data in NIFTI format. It is essentially a command-line wrapper of [this tutorial](http://dipy.org/documentation/1.0.0./examples_built/reconst_dki) made available within the [DiPy](http://dipy.org/) project;
+* `getADCDKI.py`: to fit a mono-dimensional diffusion MRI decay (i.e. b-value dependence only, no directional dependence) signal representation (choose between apparent diffusion coefficient or diffusion kurtosis);
+* `fitdki.py`: to fit the [Diffusion Kurtosis Tensor](http://doi.org/10.1002/mrm.20508) signal representation to multi-shell diffusion MRI data in NIFTI format. It is essentially a command-line wrapper of [this tutorial](http://dipy.org/documentation/1.0.0./examples_built/reconst_dki) made available within the [DiPy](http://dipy.org/) project;
 * `getphase.py`: to calculate MR phase from two NIFTIs storing the real and imaginary signals;
 * `getPM.py`: to calculate MR phase and magnitude from two NIFTIs storing the real and imaginary signals;
 * `getRI.py`: to calculate real and imaginary signals from two NIFTIs storing MR magnitude and phase.
