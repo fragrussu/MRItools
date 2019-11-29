@@ -37,7 +37,8 @@ The following command line tools are available.
 * `getADCDKI.py`: to fit a mono-dimensional diffusion MRI decay (i.e. b-value dependence only, no directional dependence) signal representation (choose between apparent diffusion coefficient or diffusion kurtosis);
 * `getphase.py`: to calculate MR phase from two NIFTIs storing the real and imaginary signals;
 * `getPM.py`: to calculate MR phase and magnitude from two NIFTIs storing the real and imaginary signals;
-* `getRI.py`: to calculate real and imaginary signals from two NIFTIs storing MR magnitude and phase.
+* `getRI.py`: to calculate real and imaginary signals from two NIFTIs storing MR magnitude and phase;
+* `rotgrad2imgspace.py`: to rotate diffusion MRI gradient directions from scanner space to image space; the code attempts to replicate the behaviour of the freely available [`dcm2niix`](http://github.com/rordenlab/dcm2niix) tool.
 
 
 
