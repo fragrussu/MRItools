@@ -1,5 +1,5 @@
 # MRItools
-MRItools is a collection of command line utilities written in Python 3 that some may find useful to process MRI images.
+MRItools is a collection of command line utilities written in Python 3 that some may find useful to conduct MRI research.
 
 # Dependencies
 To use MRItools you need a Python 3 distribution such as [Anaconda](http://www.anaconda.com/distribution). Additionally, you need the following third party modules/packages:
