@@ -1,4 +1,6 @@
 ### Rotate diffusion gradient directions from scanner space to image space
+#   The code attempts to replicate the behaviour of the freely available dcm2niix 
+#   DICOM to NIFTI converter (http://github.com/rordenlab/dcm2niix)
 #
 #
 # Author: Francesco Grussu, UCL Queen Square Institute of Neurology
@@ -29,7 +31,7 @@ from nibabel import quaternions
 from nibabel import affines
 
 ### Print help and parse arguments
-parser = argparse.ArgumentParser(description='Rotate diffusion gradient directions from scanner space to image space. Author: Francesco Grussu, University College London <francegrussu@gmail.com> <f.grussu@ucl.ac.uk>')
+parser = argparse.ArgumentParser(description='Rotate diffusion gradient directions from scanner space to image space. The code attempts to replicate the behaviour of the freely available dcm2niix DICOM to NIFTI converter (http://github.com/rordenlab/dcm2niix). Author: Francesco Grussu, University College London <francegrussu@gmail.com> <f.grussu@ucl.ac.uk>')
 parser.add_argument('grads_scanner', help='Text file containing the list of gradient directions in FSL format')
 parser.add_argument('input_nifti', help='Nifti file to the voxel space of which gradient directions will be rotated')
 parser.add_argument('grads_img', help='Path of the output text file that will store the gradient directions rotated to the image space, using the FSL format')
