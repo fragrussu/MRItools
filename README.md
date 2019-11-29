@@ -17,7 +17,7 @@ Gettins MRItools is extremely easy.
 ```
 git clone https://github.com/fragrussu/MRItools.git 
 ```
-4. MyRelax is ready for you in `./MRItools` and MRItools scripts are in: 
+4. MRItools is ready for you in `./MRItools` with the tools available here: 
 ```
 ./MRItools/tools
 ```
@@ -28,7 +28,7 @@ python ./MRItools/tools/fitdki.py --help
 
 # Description of tools
 The following command line tools are available.
-* `fitdki.py`: to fit the [Diffusion Kurtosis Imaging](http://doi.org/10.1002/mrm.20508) (DKI) signal representation to multi-shell diffusion MRI data in NIFTI format. It is nothing but a wrapper of [this tutorial](http://dipy.org/documentation/1.0.0./examples_built/reconst_dki) made available within the [DiPy](http://dipy.org/) project. 
+* `fitdki.py`: to fit the [Diffusion Kurtosis Imaging](http://doi.org/10.1002/mrm.20508) (DKI) signal representation to multi-shell diffusion MRI data in NIFTI format. It is essentially a command-line wrapper of [this tutorial](http://dipy.org/documentation/1.0.0./examples_built/reconst_dki) made available within the [DiPy](http://dipy.org/) project. 
 
 
 
