@@ -28,7 +28,8 @@ python ./MRItools/tools/fitdki.py --help
 
 # Description of tools
 The following command line tools are available.
-* `fitdki.py`: wrapper of [this tutorial](http://dipy.org/documentation/1.0.0./examples_built/reconst_dki) part of [DiPy](http://dipy.org/) that allows you to fit the [Diffusion Kurtosis Imaging](http://doi.org/10.1002/mrm.20508) (DKI) signal representation to multi-shell diffusion MRI data in NIFTI format;
+* `fitdki.py`: to fit the [Diffusion Kurtosis Imaging](http://doi.org/10.1002/mrm.20508) (DKI) signal representation to multi-shell diffusion MRI data in NIFTI format. It is nothing but a wrapper of [this tutorial](http://dipy.org/documentation/1.0.0./examples_built/reconst_dki) made available within the [DiPy](http://dipy.org/) project. 
+
 
 
 Each tool has a manual. To print it, simply type in your terminal
