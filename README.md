@@ -11,6 +11,7 @@ To use MRItools you need a Python 3 distribution such as [Anaconda](http://www.a
 * [DiPy](http://dipy.org/)
 * [NumPy](http://numpy.org)
 * [Nibabel](http://nipy.org/nibabel)
+* [SciPy](http://www.scipy.org)
 
 
 # Installation (Linux and MacOS)
