@@ -1,7 +1,5 @@
 # MRItools
-MRItools is a collection of command line utilities written in Python 3 that some may find useful to conduct MRI research.
-
-MRItools may be useful if you need to:
+MRItools is a collection of command line utilities written in Python 3 that some may find useful to conduct MRI research. MRItools may be useful to you if you were planning to:
 * fit ADC or DKI signal representations to diffusion MRI data;
 * convert real/imaginary MR images to magnitude/phase or vice versa;
 * rephase complex-valued MR images to get rid of the Rician noise floor and work with real-valued data and Gaussian noise;
