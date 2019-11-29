@@ -3,7 +3,8 @@ MRItools is a collection of command line utilities written in Python 3 that some
 * fit ADC or DKI signal representations to diffusion MRI data;
 * convert real/imaginary MR images to magnitude/phase or vice versa;
 * rephase complex-valued MR images to get rid of the Rician noise floor and work with real-valued data and Gaussian noise;
-* convert diffusion gradient directions from scanner to image space.
+* convert diffusion gradient directions from scanner to image space;
+* perform repeatability analysis (coming soon).
 
 # Dependencies
 To use MRItools you need a Python 3 distribution such as [Anaconda](http://www.anaconda.com/distribution). Additionally, you need the following third party modules/packages:
