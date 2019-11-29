@@ -40,7 +40,7 @@ You can run the tools from command line, for instance using a Bash or C shell. I
 ```
 python </PATH/TO/TOOL> --help
 ```
-(for example, `python ./MRItools/tools/fitdki.py --help`).
+(for example, `python ./MRItools/tools/getADCDKI.py --help`).
 
 # If you use MRItools
 If you use MRItools in your research, please remember to cite our paper: (just wait 48 hours to find out!)
