@@ -32,7 +32,7 @@ The following command line tools are available.
 
 
 
-You can run the tools from command line, for instance using a Bash or C shell. Each tool has a manual. To print it, simply type in your terminal
+You can run the tools from command line, for instance using a Bash or C shell. Importantly, each tool has a manual: to print it, simply type in your terminal
 ```
 python </PATH/TO/TOOL> --help
 ```
