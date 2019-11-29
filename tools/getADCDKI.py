@@ -1,4 +1,4 @@
-### Node: voxel-wise ADC or DKI fitting (b-value dependence only, no directional dependence)
+### Tool for voxel-wise ADC or DKI fitting (b-value dependence only, no directional dependence)
 #
 # Author: Francesco Grussu, University College London
 #		   <f.grussu@ucl.ac.uk> <francegrussu@gmail.com>
