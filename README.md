@@ -53,7 +53,7 @@ python </PATH/TO/TOOL> --help
 If you use MRItools in your research, please remember to cite our [preprint](http://www.biorxiv.org/content/10.1101/859538v1):
 
 
-"Multi-parametric quantitative spinal cord MRI with unified signal readout and image denoising". Grussu F, Battiston M, Veraart J, Schneider T, Cohen-Adad J, Shepherd TM, Alexander DC, Novikov DS, Fieremenas E, Gandini Wheeler-Kingshott CAM; biorxiv 2019 (DOI: 10.1101/859538).
+"Multi-parametric quantitative spinal cord MRI with unified signal readout and image denoising". Grussu F, Battiston M, Veraart J, Schneider T, Cohen-Adad J, Shepherd TM, Alexander DC, Novikov DS, Fieremans E, Gandini Wheeler-Kingshott CAM; biorxiv 2019 (DOI: 10.1101/859538).
 
 # License
 MRItools is distributed under the BSD 2-Clause License, Copyright (c) 2019, University College London. All rights reserved.
