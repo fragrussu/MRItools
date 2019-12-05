@@ -15,7 +15,7 @@ To use MRItools you need a Python 3 distribution such as [Anaconda](http://www.a
 
 
 # Download 
-Getting MRItools is extremely easy: simply cloning this repository is all you need to do - the tools would be ready for you to run.
+Getting MRItools is extremely easy: cloning this repository is all you need to do. The tools would be ready for you to run.
 
 If you use Linux or MacOS:
 
