@@ -34,7 +34,7 @@ git clone https://github.com/fragrussu/MRItools.git
 python ./MRItools/tools/fitdki.py --help
 ```
 
-# Description of tools
+# MRItools available
 The following command line tools are available.
 * `fitdki.py`: to fit the [Diffusion Kurtosis Tensor](http://doi.org/10.1002/mrm.20508) signal representation to multi-shell diffusion MRI data in NIFTI format. It is essentially a command-line wrapper of [this tutorial](http://dipy.org/documentation/1.0.0./examples_built/reconst_dki) made available within the [DiPy](http://dipy.org/) project;
 * `getADCDKI.py`: to fit a mono-dimensional diffusion MRI decay (i.e. b-value dependence only, no directional dependence) signal representation (choose between apparent diffusion coefficient or diffusion kurtosis);
