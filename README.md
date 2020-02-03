@@ -12,6 +12,7 @@ To use MRItools you need a Python 3 distribution such as [Anaconda](http://www.a
 * [NumPy](http://numpy.org)
 * [Nibabel](http://nipy.org/nibabel)
 * [SciPy](http://www.scipy.org)
+* [Nipype](http://nipype.readthedocs.io/en/latest)
 
 
 # Download 
@@ -42,6 +43,7 @@ The following command line tools are available.
 * `getPM.py`: to calculate MR phase and magnitude from two NIFTIs storing the real and imaginary signals;
 * `getRI.py`: to calculate real and imaginary signals from two NIFTIs storing MR magnitude and phase;
 * `rotgrad2imgspace.py`: to rotate diffusion MRI gradient directions from scanner space to image space. The code attempts to replicate the behaviour of the freely available [`dcm2niix`](http://github.com/rordenlab/dcm2niix) tool.
+* `iccvoxelwise.py`: to evaluate voxel-wise intraclass correlation coefficient (ICC) maps according to the formalism of [Shrout and Fleiss, Psychological Bulletin 1979](http://doi.org/10.1037/0033-2909.86.2.420) (indices ICC31 and ICC11; for ICC11, estimates of variances are obtained "by hand" according to Appendix B of [Grussu et al, NeuroImage 2015](http://doi.org/10.1016/j.neuroimage.2015.01.045)). 
 
 
 
