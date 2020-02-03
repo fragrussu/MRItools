@@ -55,10 +55,13 @@ python </PATH/TO/TOOL> --help
 
 # If you use MRItools
 If you use MRItools in your research, please remember to cite our [preprint](http://doi.org/10.1101/859538):
+
 "Multi-parametric quantitative spinal cord MRI with unified signal readout and image denoising". Grussu F, Battiston M, Veraart J, Schneider T, Cohen-Adad J, Shepherd TM, Alexander DC, Novikov DS, Fieremans E, Gandini Wheeler-Kingshott CAM; [biorxiv 2019](http://doi.org/10.1101/859538) (DOI: 10.1101/859538).
 
 
+
 If you use [`iccvoxelwise.py`](http://github.com/fragrussu/MRItools/blob/master/tools/iccvoxelwise.py), please cite as well:
+
 "Neurite orientation dispersion and density imaging of the healthy cervical spinal cord in vivo". Grussu F, Schneider T, Zhang H, Alexander DC, Wheeler–Kingshott CAM; [NeuroImage 2015, 111: 590-601](http://doi.org/10.1016/j.neuroimage.2015.01.045) (DOI: 10.1016/j.neuroimage.2015.01.045).
 
 
