@@ -60,7 +60,7 @@ If you use MRItools in your research, please remember to cite our preprint:
 
 
 
-If you use [`iccvoxelwise.py`](http://github.com/fragrussu/MRItools/blob/master/tools/iccvoxelwise.py), please cite as well:
+If you use [`iccvoxelwise.py`](http://github.com/fragrussu/MRItools/blob/master/tools/iccvoxelwise.py), please also cite:
 
 "Neurite orientation dispersion and density imaging of the healthy cervical spinal cord in vivo". Grussu F, Schneider T, Zhang H, Alexander DC, Wheeler–Kingshott CAM; [NeuroImage 2015, 111: 590-601](http://doi.org/10.1016/j.neuroimage.2015.01.045) (DOI: 10.1016/j.neuroimage.2015.01.045).
 
