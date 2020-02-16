@@ -42,7 +42,7 @@ The following command line tools are available.
 * `getphase.py`: to calculate MR phase from two NIFTIs storing the real and imaginary signals;
 * `getPM.py`: to calculate MR phase and magnitude from two NIFTIs storing the real and imaginary signals;
 * `getRI.py`: to calculate real and imaginary signals from two NIFTIs storing MR magnitude and phase;
-* `rotgrad2imgspace.py`: to rotate diffusion MRI gradient directions from scanner space to image space. The code attempts to replicate the behaviour of the freely available [`dcm2niix`](http://github.com/rordenlab/dcm2niix) tool.
+* `rotgrad2imgspace.py`: to rotate diffusion MRI gradient directions from scanner space to image space. The code replicates the conversion of gradient directions from scanner to image image space performed by the freely available [`dcm2niix`](http://github.com/rordenlab/dcm2niix) tool.
 * `iccvoxelwise.py`: to evaluate voxel-wise intraclass correlation coefficient (ICC) maps according to the formalism of [Shrout and Fleiss, Psychological Bulletin 1979](http://doi.org/10.1037/0033-2909.86.2.420) (indices ICC31 and ICC11; for ICC11, estimates of variances are obtained "by hand" according to Appendix B of [Grussu et al, NeuroImage 2015](http://doi.org/10.1016/j.neuroimage.2015.01.045)). 
 
 
