@@ -54,9 +54,9 @@ python </PATH/TO/TOOL> --help
 (for example, `python ./MRItools/tools/getADCDKI.py --help`).
 
 # If you use MRItools
-If you use MRItools in your research, please remember to cite our preprint:
+If you use MRItools in your research, please remember to cite our paper:
 
-"Multi-parametric quantitative spinal cord MRI with unified signal readout and image denoising". Grussu F, Battiston M, Veraart J, Schneider T, Cohen-Adad J, Shepherd TM, Alexander DC, Novikov DS, Fieremans E, Gandini Wheeler-Kingshott CAM; [biorxiv 2019](http://doi.org/10.1101/859538) (DOI: 10.1101/859538).
+"Multi-parametric quantitative in vivo spinal cord MRI with unified signal readout and image denoising". Grussu F, Battiston M, Veraart J, Schneider T, Cohen-Adad J, Shepherd TM, Alexander DC, Fieremans E, Novikov DS, Gandini Wheeler-Kingshott CAM; NeuroImage 2020 (DOI: 10.1016/j.neuroimage.2020.116884). Link to paper [here](http://doi.org/10.1016/j.neuroimage.2020.116884).
 
 
 
