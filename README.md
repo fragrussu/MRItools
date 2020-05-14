@@ -37,13 +37,13 @@ python ./MRItools/tools/fitdki.py --help
 
 # MRItools available
 The following command line tools are available.
-* `fitdki.py`: to fit the [Diffusion Kurtosis Tensor](http://doi.org/10.1002/mrm.20508) signal representation to multi-shell diffusion MRI data in NIFTI format. It is essentially a command-line wrapper of [this tutorial](http://dipy.org/documentation/1.0.0./examples_built/reconst_dki) made available within the [DiPy](http://dipy.org/) project;
-* `getADCDKI.py`: to fit a mono-dimensional diffusion MRI decay (i.e. b-value dependence only, no directional dependence) signal representation (choose between apparent diffusion coefficient or diffusion kurtosis);
-* `getphase.py`: to calculate MR phase from two NIFTIs storing the real and imaginary signals;
-* `getPM.py`: to calculate MR phase and magnitude from two NIFTIs storing the real and imaginary signals;
-* `getRI.py`: to calculate real and imaginary signals from two NIFTIs storing MR magnitude and phase;
-* `rotgrad2imgspace.py`: to rotate diffusion MRI gradient directions from scanner space to image space. The code replicates the conversion of gradient directions from scanner to image image space performed by the freely available [`dcm2niix`](http://github.com/rordenlab/dcm2niix) tool;
-* `iccvoxelwise.py`: to evaluate voxel-wise intraclass correlation coefficient (ICC) maps according to the formalism of [Shrout and Fleiss, Psychological Bulletin 1979](http://doi.org/10.1037/0033-2909.86.2.420) (indices ICC31 and ICC11; for ICC11, estimates of variances are obtained "by hand" according to Appendix B of [Grussu et al, NeuroImage 2015](http://doi.org/10.1016/j.neuroimage.2015.01.045)). 
+* [`fitdki.py`](http://github.com/fragrussu/MRItools/blob/master/tools/fitdki.py): to fit the [Diffusion Kurtosis Tensor](http://doi.org/10.1002/mrm.20508) signal representation to multi-shell diffusion MRI data in NIFTI format. It is essentially a command-line wrapper of [this tutorial](http://dipy.org/documentation/1.0.0./examples_built/reconst_dki) made available within the [DiPy](http://dipy.org/) project;
+* [`getADCDKI.py`](http://github.com/fragrussu/MRItools/blob/master/tools/getADCDKI.py): to fit a mono-dimensional diffusion MRI decay (i.e. b-value dependence only, no directional dependence) signal representation (choose between apparent diffusion coefficient or diffusion kurtosis);
+* [`getphase.py`](http://github.com/fragrussu/MRItools/blob/master/tools/getphase.py): to calculate MR phase from two NIFTIs storing the real and imaginary signals;
+* [`getPM.py`](http://github.com/fragrussu/MRItools/blob/master/tools/getPM.py): to calculate MR phase and magnitude from two NIFTIs storing the real and imaginary signals;
+* [`getRI.py`](http://github.com/fragrussu/MRItools/blob/master/tools/getRI.py): to calculate real and imaginary signals from two NIFTIs storing MR magnitude and phase;
+* [`rotgrad2imgspace.py`](http://github.com/fragrussu/MRItools/blob/master/tools/rotgrad2imgspace.py): to rotate diffusion MRI gradient directions from scanner space to image space. The code replicates the conversion of gradient directions from scanner to image image space performed by the freely available [`dcm2niix`](http://github.com/rordenlab/dcm2niix) tool;
+* [`iccvoxelwise.py`](http://github.com/fragrussu/MRItools/blob/master/tools/iccvoxelwise.py): to evaluate voxel-wise intraclass correlation coefficient (ICC) maps according to the formalism of [Shrout and Fleiss, Psychological Bulletin 1979](http://doi.org/10.1037/0033-2909.86.2.420) (indices ICC31 and ICC11; for ICC11, estimates of variances are obtained "by hand" according to Appendix B of [Grussu et al, NeuroImage 2015](http://doi.org/10.1016/j.neuroimage.2015.01.045)). 
 
 
 
