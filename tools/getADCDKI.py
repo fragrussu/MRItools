@@ -46,7 +46,7 @@ def signal_gen(mri_seq,fit_dki,tissue_par):
 	    RETURNS
 	    - signal: a numpy array of measurements generated according to the model,
 			
-		         S = S0*exp(-b ADC + (K/6)*(bD)^2)
+		         S = S0*exp(-b ADC + (K/6)*(b ADC)^2)
 		
 		       where K is fixed to 0 if fit_dki = 0
 		
