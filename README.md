@@ -65,7 +65,7 @@ python </PATH/TO/TOOL> --help
 
 # MRItools: Matlab
 The following tools written in Matlab are available:
-* [`MPio_moments.m`](https://github.com/fragrussu/MRItools/blob/master/matlabtools/MPio_moments.m): to perform [MP-PCA](http:/doi.org/10.1016/j.neuroimage.2016.08.016) denoising with code written by [Veraart et al](https://github.com/NYU-DiffusionMRI/mppca_denoise/blob/master/MPdenoising.m) (Veraart J et al, NeuroImage 2016, 142: 394-406, DOI: 10.1016/j.neuroimage.2016.08.016) and subsequently mitigate the residual noise floor with a custom implementation of the [*method of moments*](http://doi.org/10.1016/j.jmr.2006.01.016) (Koay and Basser, J Magn Reson 2006, 179(2):317-22).
+* [`MPio_moments.m`](https://github.com/fragrussu/MRItools/blob/master/matlabtools/MPio_moments.m): to perform [MP-PCA](http:/doi.org/10.1016/j.neuroimage.2016.08.016) denoising with [this code](https://github.com/NYU-DiffusionMRI/mppca_denoise/blob/master/MPdenoising.m) (Veraart J et al, NeuroImage 2016, 142: 394-406) and subsequently mitigate the residual noise floor with a custom implementation of the [*method of moments*](http://doi.org/10.1016/j.jmr.2006.01.016) (Koay and Basser, J Magn Reson 2006, 179(2):317-22).
 
 
 # If you use MRItools
