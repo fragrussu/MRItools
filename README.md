@@ -8,13 +8,15 @@ MRItools is a collection of utilities written almost entirely in Python 3 (and i
 * perform noise floor mitigation following [MP-PCA](http:/doi.org/10.1016/j.neuroimage.2016.08.016) MR image denoising.
 
 # Dependencies
-To use MRItools you need a Python 3 distribution such as [Anaconda](http://www.anaconda.com/distribution). Additionally, you need the following third party modules/packages:
+To use the python tools of MRItools you need a Python 3 distribution such as [Anaconda](http://www.anaconda.com/distribution). Additionally, you need the following third party modules/packages:
 * [DiPy](http://dipy.org/)
 * [NumPy](http://numpy.org)
 * [Nibabel](http://nipy.org/nibabel)
 * [SciPy](http://www.scipy.org)
 * [Nipype](http://nipype.readthedocs.io/en/latest)
 
+To use Matlab tools, you need the following toolboxes/functions:
+* [MP-PCA](https://github.com/NYU-DiffusionMRI/mppca_denoise/blob/master/MPdenoising.m).
 
 # Download 
 Getting MRItools is extremely easy: cloning this repository is all you need to do. The tools would be ready for you to run.
@@ -27,17 +29,21 @@ If you use Linux or MacOS:
 ```
 git clone https://github.com/fragrussu/MRItools.git 
 ```
-4. MRItools is ready for you in `./MRItools` with the tools available here: 
+4. The tools written is python are now ready for you here: 
 ```
 ./MRItools/tools
 ```
-5. You should now be able to use the code. Try to print the manual of a script, for instance of `fitdki.py`, to make sure this is really the case:
+You should now be able to use them. Try to print the manual of a script, for instance of `fitdki.py`, to make sure this is really the case:
 ```
 python ./MRItools/tools/fitdki.py --help
 ```
+5. The tools written in Matlab are instead ready for you here:
+```
+./MRItools/matlabtools
+```
 
-# MRItools available
-The following command line tools are available.
+# MRItools: python
+The following tools written in python are available:
 * [`fitdki.py`](http://github.com/fragrussu/MRItools/blob/master/tools/fitdki.py): to fit the [Diffusion Kurtosis Tensor](http://doi.org/10.1002/mrm.20508) signal representation to multi-shell diffusion MRI data in NIFTI format. It is essentially a command-line wrapper of [this tutorial](http://dipy.org/documentation/1.0.0./examples_built/reconst_dki) made available within the [DiPy](http://dipy.org/) project;
 * [`getADCDKI.py`](http://github.com/fragrussu/MRItools/blob/master/tools/getADCDKI.py): to fit a mono-dimensional diffusion MRI decay (i.e. b-value dependence only, no directional dependence) signal representation (choose between apparent diffusion coefficient or diffusion kurtosis);
 * [`getphase.py`](http://github.com/fragrussu/MRItools/blob/master/tools/getphase.py): to calculate MR phase from two NIFTIs storing the real and imaginary signals;
@@ -46,13 +52,18 @@ The following command line tools are available.
 * [`rotgrad2imgspace.py`](http://github.com/fragrussu/MRItools/blob/master/tools/rotgrad2imgspace.py): to rotate diffusion MRI gradient directions from scanner space to image space. The code replicates the conversion of gradient directions from scanner to image image space performed by the freely available [`dcm2niix`](http://github.com/rordenlab/dcm2niix) tool;
 * [`iccvoxelwise.py`](http://github.com/fragrussu/MRItools/blob/master/tools/iccvoxelwise.py): to evaluate voxel-wise intraclass correlation coefficient (ICC) maps according to the formalism of [Shrout and Fleiss, Psychological Bulletin 1979](http://doi.org/10.1037/0033-2909.86.2.420) (indices ICC31 and ICC11; for ICC11, estimates of variances are obtained "by hand" according to Appendix B of [Grussu et al, NeuroImage 2015, 111: 590-601](http://doi.org/10.1016/j.neuroimage.2015.01.045)). 
 
-
-
 You can run the tools from command line, for instance using a Bash or C shell. Importantly, each tool has a manual: to print it, simply type in your terminal
 ```
 python </PATH/TO/TOOL> --help
 ```
 (for example, `python ./MRItools/tools/getADCDKI.py --help`).
+
+
+
+# MRItools: Matlab
+The following tools written in Matlab are available:
+* [`fitdki.py`](http://github.com/fragrussu/MRItools/blob/master/tools/fitdki.py): to 
+
 
 # If you use MRItools
 If you use MRItools in your research, please remember to cite our paper:
