@@ -4,7 +4,7 @@ MRItools is a collection of utilities written almost entirely in Python 3 (and i
 * convert real/imaginary MR images to magnitude/phase or vice versa;
 * convert diffusion gradient directions from scanner to image space;
 * perform repeatability analyses on quantitative MRI metrics;
-* rephase complex-valued MR images to get rid of the Rician noise floor and work with real-valued data and Gaussian noise;
+* rephase complex-valued MR images to get rid of the noise floor and work with real-valued data and Gaussian noise;
 * perform noise floor mitigation following [MP-PCA](http:/doi.org/10.1016/j.neuroimage.2016.08.016) MR image denoising.
 
 # Dependencies
