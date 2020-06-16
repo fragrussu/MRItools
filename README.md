@@ -8,14 +8,14 @@ MRItools is a collection of utilities written almost entirely in Python 3 (and i
 * perform noise floor mitigation following [MP-PCA](http:/doi.org/10.1016/j.neuroimage.2016.08.016) MR image denoising.
 
 # Dependencies
-To use the python tools of MRItools you need a Python 3 distribution such as [Anaconda](http://www.anaconda.com/distribution). Additionally, you need the following third party modules/packages:
+To use tools written in python you need a Python 3 distribution such as [Anaconda](http://www.anaconda.com/distribution). Additionally, you need the following third party modules/packages:
 * [DiPy](http://dipy.org/)
 * [NumPy](http://numpy.org)
 * [Nibabel](http://nipy.org/nibabel)
 * [SciPy](http://www.scipy.org)
 * [Nipype](http://nipype.readthedocs.io/en/latest)
 
-To use Matlab tools, you need the following toolboxes/functions:
+To use tools written in Matlab, you need the following toolboxes/functions:
 * [MP-PCA](https://github.com/NYU-DiffusionMRI/mppca_denoise/blob/master/MPdenoising.m).
 
 # Download 
