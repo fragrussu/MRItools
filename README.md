@@ -9,12 +9,12 @@ MRItools is a collection of utilities written almost entirely in Python 3 (and i
 
 # Dependencies
 To use tools written in python you need a Python 3 distribution such as [Anaconda](http://www.anaconda.com/distribution). Additionally, you need the following third party modules/packages:
-* [DiPy](http://dipy.org/)
+* [DiPy](http://dipy.org)
 * [NumPy](http://numpy.org)
 * [Nibabel](http://nipy.org/nibabel)
 * [SciPy](http://www.scipy.org)
 * [Nipype](http://nipype.readthedocs.io/en/latest)
-* [Scikit-image](http://scikit-image.org/)
+* [Scikit-image](http://scikit-image.org).
 
 To use tools written in Matlab, you need the following toolboxes/functions:
 * [MP-PCA](https://github.com/NYU-DiffusionMRI/mppca_denoise/blob/master/MPdenoising.m).
