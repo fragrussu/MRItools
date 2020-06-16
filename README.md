@@ -1,5 +1,5 @@
 # MRItools
-MRItools is a collection of utilities written almost entirely in Python 3 (and in some cases in Matlab) that you may find useful to conduct MRI research. MRItools allows you:
+MRItools is a collection of utilities written almost entirely in Python 3 (and in some cases in Matlab) that you may find useful to conduct MRI research. They could help you do things like:
 * fit ADC or DKI signal representations to diffusion MRI data;
 * convert real/imaginary MR images to magnitude/phase or vice versa;
 * convert diffusion gradient directions from scanner to image space;
@@ -62,7 +62,7 @@ python </PATH/TO/TOOL> --help
 
 # MRItools: Matlab
 The following tools written in Matlab are available:
-* [`fitdki.py`](http://github.com/fragrussu/MRItools/blob/master/tools/fitdki.py): to 
+* [`MPio_moments.m`](https://github.com/fragrussu/MRItools/blob/master/matlabtools/MPio_moments.m): to perform [MP-PCA](http:/doi.org/10.1016/j.neuroimage.2016.08.016) denoising with code written by [Veraart et al](https://github.com/NYU-DiffusionMRI/mppca_denoise/blob/master/MPdenoising.m) [(Veraart J et al, NeuroImage 2016, 142: 394-406, DOI: 10.1016/j.neuroimage.2016.08.016)](http://doi.org/10.1016/j.neuroimage.2016.08.016) and subsequently mitigate the residual noise floor with a custom implementation of the *method of moments* [(Koay CG and Basser PJ, J Magn Reson 2006, 179(2):317-22, DOI: 10.1016/j.jmr.2006.01.016)](http://doi.org/10.1016/j.jmr.2006.01.016).
 
 
 # If you use MRItools
@@ -80,6 +80,7 @@ If you use [`iccvoxelwise.py`](http://github.com/fragrussu/MRItools/blob/master/
 
 # License
 MRItools is distributed under the BSD 2-Clause License, Copyright (c) 2019, 2020 University College London. All rights reserved.
+
 Link to license [here](http://github.com/fragrussu/MRItools/blob/master/LICENSE).
 
 # Acknowledgements
