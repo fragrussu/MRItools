@@ -5,7 +5,7 @@ MRItools is a collection of utilities written almost entirely in Python 3 (and i
 * convert diffusion gradient directions from scanner to image space;
 * perform repeatability analyses on quantitative MRI metrics;
 * rephase complex-valued MR images to get rid of the noise floor and work with real-valued data and Gaussian noise;
-* perform noise floor mitigation following [MP-PCA](http:/doi.org/10.1016/j.neuroimage.2016.08.016) MR image denoising.
+* perform noise floor mitigation following MP-PCA MR image denoising.
 
 # Dependencies
 To use tools written in python you need a Python 3 distribution such as [Anaconda](http://www.anaconda.com/distribution). Additionally, you need the following third party modules/packages:
