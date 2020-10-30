@@ -18,12 +18,13 @@ To use tools written in python you need a Python 3 distribution such as [Anacond
 * [tqdm](https://github.com/tqdm/tqdm)
 * [joblib](https://joblib.readthedocs.io)
 * [MP-PCA](https://github.com/NYU-DiffusionMRI/mppca_denoise/blob/master/mpdenoise.py)
+* [Gibbs unringing](https://github.com/RafaelNH/gibbs-removal/blob/master/gibbs_removal.py)
 
 To use tools written in Matlab, you need the following toolboxes/functions:
 * [MP-PCA](https://github.com/NYU-DiffusionMRI/mppca_denoise/blob/master/MPdenoising.m).
 
 # Download 
-Getting MRItools is extremely easy: cloning this repository is all you need to do. The tools would be ready for you to run.
+Getting MRItools is extremely easy: cloning this repository and downloading three additional files from the web is all you need to do.
 
 If you use Linux or MacOS:
 
@@ -37,14 +38,17 @@ git clone https://github.com/fragrussu/MRItools.git
 ```
 ./MRItools/tools
 ```
-You should now be able to use them. Try to print the manual of a script, for instance of `fitdki.py`, to make sure this is really the case:
+You should now download the freely available [MP-PCA](https://github.com/NYU-DiffusionMRI/mppca_denoise/blob/master/mpdenoise.py) and [Gibbs unringing](https://github.com/RafaelNH/gibbs-removal/blob/master/gibbs_removal.py) Python files and place them in `./MRItools/tools`. If all worked fine, you should be able to print the manual of a script, for instance of `unring.py` or `runMPPCA.py`. Try to type in your terminal:
 ```
-python ./MRItools/tools/fitdki.py --help
+python ./MRItools/tools/unring.py --help
+python ./MRItools/tools/runMPPCA.py --help
 ```
 5. The tools written in Matlab are instead ready for you here:
 ```
 ./MRItools/matlabtools
 ```
+You should now download the freely available [MP-PCA](https://github.com/NYU-DiffusionMRI/mppca_denoise/blob/master/MPdenoising.m) implementation and place it in `./MRItools/matlabtools`.
+
 
 # MRItools: python
 The following tools written in python are available:
