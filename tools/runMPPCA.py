@@ -1,5 +1,5 @@
 # Author: Francesco Grussu, University College London
-#		   <f.grussu@ucl.ac.uk> <francegrussu@gmail.com>
+#		   <f.grussu@ucl.ac.uk>  <francegrussu@gmail.com>
 #
 # Code released under BSD Two-Clause license
 #
