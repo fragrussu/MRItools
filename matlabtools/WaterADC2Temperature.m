@@ -1,5 +1,5 @@
 function Temp = WaterADC2Temperature(ADC)
-% Converts and ADC map of water into a temperature map
+% Converts and ADC map of water into a temperature map 
 %
 % Temp = WaterADC2Temperature(ADC)
 %
