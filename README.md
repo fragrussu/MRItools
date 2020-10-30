@@ -14,7 +14,10 @@ To use tools written in python you need a Python 3 distribution such as [Anacond
 * [Nibabel](http://nipy.org/nibabel)
 * [SciPy](http://www.scipy.org)
 * [Nipype](http://nipype.readthedocs.io/en/latest)
-* [Scikit-image](http://scikit-image.org).
+* [Scikit-image](http://scikit-image.org)
+* [tqdm](https://github.com/tqdm/tqdm)
+* [joblib](https://joblib.readthedocs.io)
+* [MP-PCA](https://github.com/NYU-DiffusionMRI/mppca_denoise/blob/master/mpdenoise.py)
 
 To use tools written in Matlab, you need the following toolboxes/functions:
 * [MP-PCA](https://github.com/NYU-DiffusionMRI/mppca_denoise/blob/master/MPdenoising.m).
