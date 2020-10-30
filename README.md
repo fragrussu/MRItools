@@ -38,7 +38,10 @@ git clone https://github.com/fragrussu/MRItools.git
 ```
 ./MRItools/tools
 ```
-You should now download the freely available [MP-PCA](https://github.com/NYU-DiffusionMRI/mppca_denoise/blob/master/mpdenoise.py) and [Gibbs unringing](https://github.com/RafaelNH/gibbs-removal/blob/master/gibbs_removal.py) Python files and place them in `./MRItools/tools`. If all worked fine, you should be able to print the manual of a script, for instance of `unring.py` or `runMPPCA.py`. Try to type in your terminal:
+You should now download the freely available [MP-PCA](https://github.com/NYU-DiffusionMRI/mppca_denoise/blob/master/mpdenoise.py) and [Gibbs unringing](https://github.com/RafaelNH/gibbs-removal/blob/master/gibbs_removal.py) Python files and place them in `./MRItools/tools`. 
+
+
+If everything worked well, you should be able to print the manual of the`unring.py` and `runMPPCA.py` scripts. Try to type in your terminal:
 ```
 python ./MRItools/tools/unring.py --help
 python ./MRItools/tools/runMPPCA.py --help
