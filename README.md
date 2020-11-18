@@ -41,19 +41,19 @@ git clone https://github.com/fragrussu/MRItools.git
 ```
 ./MRItools/tools
 ```
-You should now download the freely available [MP-PCA](https://github.com/NYU-DiffusionMRI/mppca_denoise/blob/master/mpdenoise.py) and [Gibbs unringing](https://github.com/RafaelNH/gibbs-removal/blob/master/gibbs_removal.py) Python files and place them in `./MRItools/tools`. 
+The tools written in Matlab are instead ready for you here:
+```
+./MRItools/matlabtools
+```
+5. You should now download the freely available [MP-PCA](https://github.com/NYU-DiffusionMRI/mppca_denoise/blob/master/mpdenoise.py) and [Gibbs unringing](https://github.com/RafaelNH/gibbs-removal/blob/master/gibbs_removal.py) Python files and place them in `./MRItools/tools`. Additionally, you should also download the freely available [MP-PCA](https://github.com/NYU-DiffusionMRI/mppca_denoise/blob/master/MPdenoising.m) Matlab implementation and place it in `./MRItools/matlabtools`.
 
+The script [`setup.sh`](https://github.com/fragrussu/MRItools/blob/master/setup.sh) does this for you.
 
-If everything worked well, you should be able to print the manual of the`unring.py` and `runMPPCA.py` scripts. Try to type in your terminal:
+6. If everything worked well, you should be able to print the manual of the`unring.py` and `runMPPCA.py` scripts. Try to type in your terminal:
 ```
 python ./MRItools/tools/unring.py --help
 python ./MRItools/tools/runMPPCA.py --help
 ```
-5. The tools written in Matlab are instead ready for you here:
-```
-./MRItools/matlabtools
-```
-You should now download the freely available [MP-PCA](https://github.com/NYU-DiffusionMRI/mppca_denoise/blob/master/MPdenoising.m) implementation and place it in `./MRItools/matlabtools`.
 
 
 # MRItools: python
