@@ -535,7 +535,7 @@ def FitModel(*argv):
 		sys.exit(1)
 	
 	# Get image dimensions and convert to float64
-	sig_data = sig_obj.get_data()
+	sig_data = sig_obj.get_fdata()
 	imgsize = sig_data.shape
 	sig_data = np.array(sig_data,'float64')
 	imgsize = np.array(imgsize)
@@ -586,7 +586,7 @@ def FitModel(*argv):
 		mask_affine = mask_header.get_best_affine()	
 		
 		# Make sure the mask is a 3D file
-		mask_data = mask_obj.get_data()
+		mask_data = mask_obj.get_fdata()
 		masksize = mask_data.shape
 		masksize = np.array(masksize)
 		if masksize.size!=3:
@@ -678,7 +678,7 @@ def FitModel(*argv):
 		t2_affine = t2_header.get_best_affine()	
 		
 		# Make sure the mask is a 3D file
-		t2_data = t2_obj.get_data()
+		t2_data = t2_obj.get_fdata()
 		t2size = t2_data.shape
 		t2size = np.array(t2size)
 		if t2size.size!=3:

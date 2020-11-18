@@ -55,7 +55,7 @@ def imgphase(real_nifti,imag_nifti,phase_nifti):
 		print('')
 		sys.exit(1)
 	
-	imgR_data = imgR_obj.get_data()
+	imgR_data = imgR_obj.get_fdata()
 	imgR_size = imgR_data.shape
 	imgR_size = np.array(imgR_size)
 	imgR_ndim = imgR_size.size
@@ -72,7 +72,7 @@ def imgphase(real_nifti,imag_nifti,phase_nifti):
 		print('')
 		sys.exit(1)
 
-	imgI_data = imgI_obj.get_data()
+	imgI_data = imgI_obj.get_fdata()
 	imgI_size = imgI_data.shape
 	imgI_size = np.array(imgI_size)
 	imgI_ndim = imgI_size.size

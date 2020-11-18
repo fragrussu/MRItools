@@ -44,7 +44,7 @@ maskid = args.mask
 # Load first measurement of first subject to get image size and reference header
 refname = '{}/subj1_meas1.nii'.format(datadir)
 refnifti = nib.load(refname)    # Reference NIFTI
-refmat = refnifti.get_data()   
+refmat = refnifti.get_fdata()   
 imgsize = refmat.shape          # Reference image size
 fullmatsize = tuple([Nsubj]) + tuple([Nmeas]) + imgsize   # To create a matrix Nsubj x Nmeas x Nvox1 x Nvox2 x Novx3 storing all the measurements from all the subjects
 fulldata = np.zeros(fullmatsize)
@@ -77,7 +77,7 @@ for ss in range(1, Nsubj+1):
 			print('ERROR: the parametric map {} does not exist or is not in NIFTI format. Exiting with 1.'.format(myfilename))	  			 
 			print('')
 			sys.exit(1)
-		mydata = mynifti.get_data()               # Extract voxel-values
+		mydata = mynifti.get_fdata()               # Extract voxel-values
 		my_header = mynifti.header                # Header 
 		my_affine = my_header.get_best_affine()   # Geometric information of header
 		my_dims = mynifti.shape                   # Image size
@@ -98,7 +98,7 @@ if isinstance(maskid, str)==1:
 		print('ERROR: the mask file {} does not exist or is not in NIFTI format. Exiting with 1.'.format(maskid))	  			 
 		print('')
 		sys.exit(1)
-	maskvals = maskobj.get_data()
+	maskvals = maskobj.get_fdata()
 	mask_header = maskobj.header                  # Header 
 	mask_affine = mask_header.get_best_affine()   # Geometric information of header
 	mask_dims = maskobj.shape                     # Image size

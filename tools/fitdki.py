@@ -71,7 +71,7 @@ if __name__ == "__main__":
 
 	# Load DWI
 	dwiobj = nib.load(dwifile)    # Input data
-	dwiimg = dwiobj.get_data()
+	dwiimg = dwiobj.get_fdata()
 	imgsize = dwiimg.shape
 
 	# Load b-values and gradient directions
@@ -83,7 +83,7 @@ if __name__ == "__main__":
 
 		# The user provided a mask: load it
 		maskobj = nib.load(maskid)
-		maskvals = np.array(maskobj.get_data(),dtype=bool)
+		maskvals = np.array(maskobj.get_fdata(),dtype=bool)
 	else:
 
 		# No mask provided: flag that you want to analyse all voxels

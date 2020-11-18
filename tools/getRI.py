@@ -57,7 +57,7 @@ def imgRI(phase_nifti,mag_nifti,real_nifti,imag_nifti):
 		print('')
 		sys.exit(1)
 	
-	imgP_data = imgP_obj.get_data()
+	imgP_data = imgP_obj.get_fdata()
 	imgP_size = imgP_data.shape
 	imgP_size = np.array(imgP_size)
 	imgP_ndim = imgP_size.size
@@ -74,7 +74,7 @@ def imgRI(phase_nifti,mag_nifti,real_nifti,imag_nifti):
 		print('')
 		sys.exit(1)
 
-	imgM_data = imgM_obj.get_data()
+	imgM_data = imgM_obj.get_fdata()
 	imgM_size = imgM_data.shape
 	imgM_size = np.array(imgM_size)
 	imgM_ndim = imgM_size.size

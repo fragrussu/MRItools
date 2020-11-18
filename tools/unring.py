@@ -66,7 +66,7 @@ if __name__ == "__main__":
 	except:
 		print('')
 		raise RuntimeError('ERROR: the input MRI file {} does not exist or is not in NIFTI format.'.format(infile))	 
-	mri_data = mri_obj.get_data()
+	mri_data = mri_obj.get_fdata()
 	mri_data[np.isnan(mri_data)] = 0.0    # Remove NaNs
 	mri_data[np.isinf(mri_data)] = 0.0    # Remove Infs
 
