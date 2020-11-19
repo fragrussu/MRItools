@@ -76,13 +76,6 @@ while (( "$#" )); do
       echo " - FSL https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/"
       echo " - NiftyReg http://cmictig.cs.ucl.ac.uk/wiki/index.php/NiftyReg"
       echo ""
-      echo "Author:" 
-      echo "  Francesco Grussu"
-      echo "  Radiomics Group"
-      echo "  Vall d'Hebron Institute of Oncology (VHIO)"
-      echo "  Barcelona, Spain"
-      echo "  <fgrussu@vhio.net> <francegrussu@gmail.com>"
-      echo "  November 2020"
       echo ""
       exit	
       shift
