@@ -1,5 +1,5 @@
 # MRItools
-MRItools is a collection of utilities written in Python 3, Matlab and Bash that you may find useful to conduct MRI research. They could help you do things like:
+MRItools is a collection of utilities written in Python 3, Matlab and Bash shell that you may find useful in your MRI research. They could help you do things like:
 * fit ADC or DKI signal representations to diffusion MRI data;
 * convert real/imaginary MR images to magnitude/phase or vice versa;
 * convert diffusion gradient directions from scanner to image space;
@@ -9,7 +9,7 @@ MRItools is a collection of utilities written in Python 3, Matlab and Bash that 
 * analyse random walker trajectories from the diffusion MRI simulator Camino;
 * estimate the temperature of free water from measurements of self-diffusifity;
 * plot quantitative MRI maps on top of anatomical scans;
-* correct for motion 4D series of multi-contrast MRI volumes.
+* correct for motion in 4D series of multi-contrast MRI volumes.
 
 # Dependencies
 To use tools written in python you need a Python 3 distribution such as [Anaconda](http://www.anaconda.com/distribution). Additionally, you need the following third party modules/packages:
@@ -52,16 +52,11 @@ The tools written in Matlab are here:
 ```
 The tools written in Bash are here:
 ```
-./MRItools/bashtools
+./MRItools/shelltools
 ```
-5. You should now download the freely available [MP-PCA](https://github.com/NYU-DiffusionMRI/mppca_denoise/blob/master/mpdenoise.py) and [Gibbs unringing](https://github.com/RafaelNH/gibbs-removal/blob/master/gibbs_removal.py) Python files and place them in `./MRItools/tools`. Additionally, you should also download the freely available [MP-PCA](https://github.com/NYU-DiffusionMRI/mppca_denoise/blob/master/MPdenoising.m) Matlab implementation and place it in `./MRItools/matlabtools`. The script [`setup.sh`](https://github.com/fragrussu/MRItools/blob/master/setup.sh) does this for you. Also, do not forget to update your `PATH` Bash environment variable with the path of FSL and NiftyReg.
+5. You should now download the freely available [MP-PCA](https://github.com/NYU-DiffusionMRI/mppca_denoise/blob/master/mpdenoise.py) and [Gibbs unringing](https://github.com/RafaelNH/gibbs-removal/blob/master/gibbs_removal.py) Python files and place them in [`./MRItools/tools`](https://github.com/fragrussu/MRItools/tree/master/tools). Additionally, you should also download the freely available [MP-PCA](https://github.com/NYU-DiffusionMRI/mppca_denoise/blob/master/MPdenoising.m) Matlab implementation and place it in [`./MRItools/matlabtools`](https://github.com/fragrussu/MRItools/tree/master/matlabtools). The script [`setup.sh`](https://github.com/fragrussu/MRItools/blob/master/setup.sh) does this for you. Also, do not forget to update your `PATH` Bash environment variable with the path of FSL and NiftyReg, if you want to use [`./MRItools/shelltools`](https://github.com/fragrussu/MRItools/tree/master/shelltools)
 
-6. If everything worked well, you should be able to print the manual of the`unring.py` and `runMPPCA.py` scripts. Try to type in your terminal:
-```
-python ./MRItools/tools/unring.py --help
-python ./MRItools/tools/runMPPCA.py --help
-```
-
+ 
 
 # List of tools 
 
@@ -83,7 +78,7 @@ You can run the tools from command line, for instance using a Bash or C shell. I
 ```
 python </PATH/TO/TOOL> --help
 ```
-(for example, `python ./MRItools/tools/getADCDKI.py --help`).
+(for example, `python ./MRItools/tools/unring.py --help`).
 
 
 
@@ -94,9 +89,21 @@ The following tools written in Matlab are available:
 * [`WaterADC2Temperature.m`](https://github.com/fragrussu/MRItools/blob/master/matlabtools/WaterADC2Temperature.m): to estimate the temperature of free water from apparent diffusion coefficient (ADC) measurements, according to the methodology shown in Holz M et al, Phys Chem Chem Phys (2000), vol 2, pag 4740-4742, doi: [10.1039/B005319H](https://doi.org/10.1039/B005319H);
 * [`overlay_qMRI_over_anatomical.m`](https://github.com/fragrussu/MRItools/blob/master/matlabtools/overlay_qMRI_over_anatomical.m): to overlay quantitative MRI maps on top of anatomical, gray-scale MRI images (examples: Figures 5 and 6 of Grussu F et al, Magnetic Resonance in Medicie 2019, 81(2): 1247-1264, doi: [10.1002/mrm.27463](https://doi.org/10.1002/mrm.27463)).
 
+Open Matlab, go to the [`./MRItools/matlabtools`](https://github.com/fragrussu/MRItools/tree/master/matlabtools) directory an print in your command line:
+```
+help <TOOL>
+```
+(for example, `help ReadTrajFilesCamino`).
+
 ## Bash
 The following tools written in Bash are available:
 * [`runmoco4d.sh`](http://github.com/fragrussu/MRItools/blob/master/bashtools/runmoco4d.sh): to correct for motion a 4D series of multi-contrast MRI volumes, by co-registering each volume with NiftyReg [`reg_aladin`](http://cmictig.cs.ucl.ac.uk/wiki/index.php/Reg_aladin) to the mean of the whole series, as done [here](http://doi.org/10.1101/2020.10.20.347625). 
+
+You can run the tools from a Bash command line shell. Importantly, each tool has a manual: to print it, simply type in your terminal
+```
+</PATH/TO/TOOL> --help
+```
+(for example, `./MRItools/shelltools/moco4d.sh --help`).
 
 
 # If you use MRItools
@@ -114,6 +121,7 @@ If you use [`iccvoxelwise.py`](http://github.com/fragrussu/MRItools/blob/master/
 If you use [`overlay_qMRI_over_anatomical.m`](https://github.com/fragrussu/MRItools/blob/master/matlabtools/overlay_qMRI_over_anatomical.m), please also cite:
 
 "Relevance of time‐dependence for clinically viable diffusion imaging of the spinal cord". Grussu F,  Ianuş A, Tur C, Prados F, Schneider T, Kaden E, Ourselin S, Drobnjak I, Zhang H, Alexander DC and Gandini Wheeler‐Kingshott CAM; [Magnetic Resonance in Medicie 2019, 81(2): 1247-1264](https://doi.org/10.1002/mrm.27463) (doi: 10.1002/mrm.27463).
+
 
 # License
 MRItools is distributed under the BSD 2-Clause License, Copyright (c) 2019, 2020 University College London. All rights reserved.
