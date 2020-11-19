@@ -89,7 +89,7 @@ The following tools written in Matlab are available:
 * [`WaterADC2Temperature.m`](https://github.com/fragrussu/MRItools/blob/master/matlabtools/WaterADC2Temperature.m): to estimate the temperature of free water from apparent diffusion coefficient (ADC) measurements, according to the methodology shown in Holz M et al, Phys Chem Chem Phys (2000), vol 2, pag 4740-4742, doi: [10.1039/B005319H](https://doi.org/10.1039/B005319H);
 * [`overlay_qMRI_over_anatomical.m`](https://github.com/fragrussu/MRItools/blob/master/matlabtools/overlay_qMRI_over_anatomical.m): to overlay quantitative MRI maps on top of anatomical, gray-scale MRI images (examples: Figures 5 and 6 of Grussu F et al, Magnetic Resonance in Medicie 2019, 81(2): 1247-1264, doi: [10.1002/mrm.27463](https://doi.org/10.1002/mrm.27463)).
 
-Open Matlab, go to the [`./MRItools/matlabtools`](https://github.com/fragrussu/MRItools/tree/master/matlabtools) directory an print in your command line:
+Open Matlab, go to the [`./MRItools/matlabtools`](https://github.com/fragrussu/MRItools/tree/master/matlabtools) directory and type in your command line:
 ```
 help <TOOL>
 ```
