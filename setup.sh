@@ -27,3 +27,5 @@ rm -r -f -v mppca_denoise
 git clone https://github.com/RafaelNH/gibbs-removal
 mv -v gibbs-removal/gibbs_removal.py tools
 rm -r -f -v gibbs-removal
+
+chmod -v -R 744 shelltools
