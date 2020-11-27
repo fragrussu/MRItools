@@ -75,6 +75,8 @@ while (( "$#" )); do
       echo "                             (0, 1, 3, 4; default 3;"
       echo "                             (0=NN, 1=LIN; 3=CUB, 4=SINC)"
       echo ""
+      echo "  -h, --help                 print this help manual"
+      echo ""
       echo "Dependencies:"
       echo " - FSL https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/"
       echo " - NiftyReg http://cmictig.cs.ucl.ac.uk/wiki/index.php/NiftyReg"
