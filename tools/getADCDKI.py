@@ -356,7 +356,13 @@ def FitSlice(data):
 								Wmat = np.diag(sig_voxel)                        # Matrix of weights W
 									
 								# Calculate coefficients via matrix multiplication
-								coeffs = np.matmul( np.linalg.pinv( np.matmul(Wmat,Qmat) ) , np.matmul(Wmat,Yvals) )
+								try:
+									coeffs = np.matmul( np.linalg.pinv( np.matmul(Wmat,Qmat) ) , np.matmul(Wmat,Yvals) )
+								except:
+									if(fit_dki==1):
+										coeffs = np.zeros((3,1))
+									else:
+										coeffs = np.zeros((2,1))
 									
 								# Retrieve signal model parameters from linear regression coefficients
 								s0_voxel = np.exp(coeffs[0])
