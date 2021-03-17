@@ -28,6 +28,7 @@ inorder=3
 changexfm=0
 changetmp=0
 PARAMS=""
+export FSLOUTPUTTYPE=NIFTI
 while (( "$#" )); do
   case "$1" in
     -h|--help)
