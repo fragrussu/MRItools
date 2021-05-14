@@ -73,7 +73,7 @@ def overlay_qmri_over_anatomical(img,mask,map_vals,map_min,map_max,colorinputs,b
 				colourPointer = colourPointer[0].item()
 				       
 				# Get the corresponding colour
-				qMRIcolour = colorset[colourPointer,:];
+				qMRIcolour = colorset[colourPointer,:]
 				
 				# Save the colour in the image to be plotted
 				qMRI_over_anat[rr,cc,0] = qMRIcolour[0]    # Red channel
