@@ -119,7 +119,7 @@ If you use [`iccvoxelwise.py`](http://github.com/fragrussu/MRItools/blob/master/
 "Neurite orientation dispersion and density imaging of the healthy cervical spinal cord in vivo". Grussu F, Schneider T, Zhang H, Alexander DC, Wheeler–Kingshott CAM; [NeuroImage 2015, 111: 590-601](http://doi.org/10.1016/j.neuroimage.2015.01.045) (doi: 10.1016/j.neuroimage.2015.01.045).
 
 
-If you use [`overlay_qMRI_over_anatomical.m`](https://github.com/fragrussu/MRItools/blob/master/matlabtools/overlay_qMRI_over_anatomical.m), please also cite:
+If you use [`overlay_qMRI_over_anatomical.m`](https://github.com/fragrussu/MRItools/blob/master/matlabtools/overlay_qMRI_over_anatomical.m) or [`plottools.py`](https://github.com/fragrussu/MRItools/blob/master/tools/plottools.py), please also cite:
 
 "Relevance of time‐dependence for clinically viable diffusion imaging of the spinal cord". Grussu F,  Ianuş A, Tur C, Prados F, Schneider T, Kaden E, Ourselin S, Drobnjak I, Zhang H, Alexander DC and Gandini Wheeler‐Kingshott CAM; [Magnetic Resonance in Medicie 2019, 81(2): 1247-1264](https://doi.org/10.1002/mrm.27463) (doi: 10.1002/mrm.27463).
 
