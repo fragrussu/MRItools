@@ -52,7 +52,7 @@ This will download the freely available [MP-PCA](https://github.com/NYU-Diffusio
 
 5. Update your `PATH` Bash environment variable with the path of FSL and NiftyReg, if you want to use [`./MRItools/shelltools`](https://github.com/fragrussu/MRItools/tree/master/shelltools).
 
-6. The tools written is python will now be available in `./MRItools/tools`; tools written in Matlab in `./MRItools/matlabtools`; the tools written in Bash in `./MRItools/shelltools`.
+6. The tools written is python will now be available in [`./MRItools/tools`](https://github.com/fragrussu/MRItools/tree/master/tools); tools written in Matlab in [`./MRItools/matlabtools`](https://github.com/fragrussu/MRItools/tree/master/matlabtools); the tools written in Bash in [`./MRItools/shelltools`](https://github.com/fragrussu/MRItools/tree/master/shelltools).
 
 
 # List of tools 
