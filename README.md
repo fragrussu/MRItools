@@ -49,7 +49,9 @@ chmod -v 744 setup.sh
 ./setup.sh
 ```
 This will download the freely available [MP-PCA](https://github.com/NYU-DiffusionMRI/mppca_denoise/blob/master/mpdenoise.py) and [Gibbs unringing](https://github.com/RafaelNH/gibbs-removal/blob/master/gibbs_removal.py) Python files and place them in [`./MRItools/tools`](https://github.com/fragrussu/MRItools/tree/master/tools). Additionally, this will also download the freely available [MP-PCA](https://github.com/NYU-DiffusionMRI/mppca_denoise/blob/master/MPdenoising.m) Matlab implementation and place it in [`./MRItools/matlabtools`](https://github.com/fragrussu/MRItools/tree/master/matlabtools).
+
 5. Update your `PATH` Bash environment variable with the path of FSL and NiftyReg, if you want to use [`./MRItools/shelltools`](https://github.com/fragrussu/MRItools/tree/master/shelltools).
+
 6. The tools written is python will now be available in `./MRItools/tools`; tools written in Matlab in `./MRItools/matlabtools`; the tools written in Bash in `./MRItools/shelltools`.
 
 
