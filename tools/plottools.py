@@ -69,8 +69,7 @@ def overlay_qmri_over_anatomical(img,mask,map_vals,map_min,map_max,colorinputs,b
 
 				# Find the metric value most similar to it
 				colourDiff = np.abs(metric_index - qMRIval)
-				colourPointer = np.where(colourDiff==np.min(colourDiff))
-				colourPointer = colourPointer[0].item()
+				colourPointer = np.argmin(colourDiff)
 				       
 				# Get the corresponding colour
 				qMRIcolour = colorset[colourPointer,:]
