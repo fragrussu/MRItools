@@ -122,9 +122,9 @@ If you use [`overlay_qMRI_over_anatomical.m`](https://github.com/fragrussu/MRIto
 
 
 # License
-MRItools is distributed under the BSD 2-Clause License, Copyright (c) 2019, 2020 University College London. All rights reserved.
+MRItools is distributed under the BSD 2-Clause License, Copyright (c) 2019, 2020 University College London. All rights reserved. Link to license [here](http://github.com/fragrussu/MRItools/blob/master/LICENSE).
 
-Link to license [here](http://github.com/fragrussu/MRItools/blob/master/LICENSE).
+**The use of MRItools MUST also comply with the individual licenses of all of its dependencies.** 
 
 # Acknowledgements
 Funding from the European Union’s Horizon 2020 research and innovation programme (grant agreement No. 634541) and from the United Kingdom Engineering and Physical Sciences Research Council (EPSRC R006032/1 and M020533/1) is acknowledged.
