@@ -238,7 +238,7 @@ echo "    ... cleaning up"
 cp $tmpfolder"/res_all.nii" $niftiout
 if [ $isdebug -eq 0 ]
 then
-	rm -r $tmpfolder
+	rm -r -f $tmpfolder
 fi
 echo ""
 
