@@ -94,81 +94,22 @@ if __name__ == "__main__":
 	print('... starting model fitting. Please wait...')
 	print('')
 
-	try:
-		dkimodel = dki.DiffusionKurtosisModel(gtab)
-		my_dki_fit = dkimodel.fit(dwiimg, mask=maskvals)
-		
-		# Get output metrics
-		FA = np.array(my_dki_fit.fa)
-		MD = 1000.000*np.array(my_dki_fit.md)    # Convert to um^2/ms
-		AD = 1000.000*np.array(my_dki_fit.ad)    # Convert to um^2/ms
-		RD = 1000.000*np.array(my_dki_fit.rd)    # Convert to um^2/ms
-		MK = np.array(my_dki_fit.mk(kmin,kmax))
-		AK = np.array(my_dki_fit.ak(kmin,kmax))
-		RK = np.array(my_dki_fit.rk(kmin,kmax))
-		dirs = np.array(my_dki_fit.directions)
-		outvec = np.zeros((dirs.shape[0],dirs.shape[1],dirs.shape[2],3))
-		outvec[:,:,:,0] = dirs[:,:,:,0,0]
-		outvec[:,:,:,1] = dirs[:,:,:,0,1]
-		outvec[:,:,:,2] = dirs[:,:,:,0,2]
-		
-	except:
+	dkimodel = dki.DiffusionKurtosisModel(gtab)
+	my_dki_fit = dkimodel.fit(dwiimg, mask=maskvals)
 
-		FA = np.zeros((imgsize[0],imgsize[1],imgsize[2]))
-		MD = np.zeros((imgsize[0],imgsize[1],imgsize[2]))
-		AD = np.zeros((imgsize[0],imgsize[1],imgsize[2]))
-		RD = np.zeros((imgsize[0],imgsize[1],imgsize[2]))
-		MK = np.zeros((imgsize[0],imgsize[1],imgsize[2]))
-		AK = np.zeros((imgsize[0],imgsize[1],imgsize[2]))
-		RK = np.zeros((imgsize[0],imgsize[1],imgsize[2]))
-		outvec = np.zeros((imgsize[0],imgsize[1],imgsize[2],3))
-		for ii in range(0,imgsize[0]):
-			for jj in range(0,imgsize[1]):
-				for kk in range(0,imgsize[2]):
-				
-					if(maskvals[ii,jj,kk]):
-					
-						# Do fitting of current voxel
-						buffermask = np.array(np.zeros(imgsize[0:3]),dtype=bool)
-						buffermask[ii,jj,kk] = True
-						
-						try:
-							dkimodel = dki.DiffusionKurtosisModel(gtab)
-							my_dki_fit = dkimodel.fit(dwiimg, mask=maskvals)
-
-							# Get output metrics
-							FAbuff = np.array(my_dki_fit.fa)
-							MDbuff = 1000.000*np.array(my_dki_fit.md)    # Convert to um^2/ms
-							ADbuff = 1000.000*np.array(my_dki_fit.ad)    # Convert to um^2/ms
-							RDbuff = 1000.000*np.array(my_dki_fit.rd)    # Convert to um^2/ms
-							MKbuff = np.array(my_dki_fit.mk(kmin,kmax))
-							AKbuff = np.array(my_dki_fit.ak(kmin,kmax))
-							RKbuff = np.array(my_dki_fit.rk(kmin,kmax))
-							dirsbuff = np.array(my_dki_fit.directions)
-							
-							FA[ii,jj,kk] = FAbuff[ii,jj,kk]
-							MD[ii,jj,kk] = MDbuff[ii,jj,kk]
-							AD[ii,jj,kk] = ADbuff[ii,jj,kk]
-							RD[ii,jj,kk] = RDbuff[ii,jj,kk]
-							MK[ii,jj,kk] = MKbuff[ii,jj,kk]
-							AK[ii,jj,kk] = AKbuff[ii,jj,kk]
-							RK[ii,jj,kk] = RKbuff[ii,jj,kk]
-							outvec[ii,jj,kk,0] = dirsbuff[ii,jj,kk,0,0]
-							outvec[ii,jj,kk,1] = dirsbuff[ii,jj,kk,0,1]
-							outvec[ii,jj,kk,2] = dirsbuff[ii,jj,kk,0,2]
-						except:
-							FA[ii,jj,kk] = np.nan
-							MD[ii,jj,kk] = np.nan
-							AD[ii,jj,kk] = np.nan
-							RD[ii,jj,kk] = np.nan
-							MK[ii,jj,kk] = np.nan
-							AK[ii,jj,kk] = np.nan
-							RK[ii,jj,kk] = np.nan
-							outvec[ii,jj,kk,0] = np.nan
-							outvec[ii,jj,kk,1] = np.nan
-							outvec[ii,jj,kk,2] = np.nan
-					
-					
+	# Get output metrics
+	FA = np.array(my_dki_fit.fa)
+	MD = 1000.000*np.array(my_dki_fit.md)    # Convert to um^2/ms
+	AD = 1000.000*np.array(my_dki_fit.ad)    # Convert to um^2/ms
+	RD = 1000.000*np.array(my_dki_fit.rd)    # Convert to um^2/ms
+	MK = np.array(my_dki_fit.mk(kmin,kmax))
+	AK = np.array(my_dki_fit.ak(kmin,kmax))
+	RK = np.array(my_dki_fit.rk(kmin,kmax))
+	dirs = np.array(my_dki_fit.directions)
+	outvec = np.zeros((dirs.shape[0],dirs.shape[1],dirs.shape[2],3))
+	outvec[:,:,:,0] = dirs[:,:,:,0,0]
+	outvec[:,:,:,1] = dirs[:,:,:,0,1]
+	outvec[:,:,:,2] = dirs[:,:,:,0,2]
 
 	# Save output files
 	print('')
